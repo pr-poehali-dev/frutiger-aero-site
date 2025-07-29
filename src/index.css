@@ -96,6 +96,17 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 text-white min-h-screen;
+    font-family: "Roboto", sans-serif;
+  }
+}
+
+@layer components {
+  .glass {
+    @apply bg-white/10 backdrop-blur-md border border-white/20 rounded-xl;
+  }
+
+  .glass-button {
+    @apply bg-white/15 backdrop-blur-md border border-white/30 rounded-lg px-4 py-2 text-white hover:bg-white/25 transition-all duration-300;
   }
 }
